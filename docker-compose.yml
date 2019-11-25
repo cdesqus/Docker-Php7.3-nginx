@@ -1,0 +1,31 @@
+version: '3.1'
+
+services:
+  # db:
+  #   container_name: Pbpd-Postgresql
+  #   image: postgres:9.5
+  #   restart: always
+  #   environment:
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres
+  #     POSTGRES_DB: postgres
+  #   # volumes:
+  #   #   - d:/Docker/pbpd/database/postgresql:/var/lib/postgresql/data
+  #   #   - d:/Docker/pbpd/database/postgresql:/var/log/postgresql
+  #   ports:
+  #     - 5432:5432
+  web:
+    container_name: Pbpd-Nginx
+    image: nginx:latest
+    ports:
+      - "8081:80"
+    volumes:
+      - ./php-frontend:/code
+      - ./etc:/etc/nginx/conf.d
+    links:
+      - php
+  php:
+    container_name: Pbpd-PHP
+    image: php:7-fpm
+    volumes:
+      - ./php-frontend:/code

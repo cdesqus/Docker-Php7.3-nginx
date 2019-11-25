@@ -1,0 +1,2 @@
+172.26.0.1 - - [06/Nov/2019:21:59:52 +0000] "GET /index.php/auth/login? HTTP/1.1" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"
+172.27.0.1 - - [06/Nov/2019:22:06:47 +0000] "GET /index.php HTTP/1.1" 200 10255 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"

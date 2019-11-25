@@ -1,0 +1,2 @@
+2019/11/06 21:59:52 [error] 6#6: *2 open() "/code/index.php/auth/login" failed (20: Not a directory), client: 172.26.0.1, server: php-docker.local, request: "GET /index.php/auth/login? HTTP/1.1", host: "localhost:8080"
+2019/11/06 22:01:06 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/site.conf:12
